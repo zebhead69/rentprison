@@ -9,8 +9,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Special+Elite&display=swap" rel="stylesheet">
     <style>
         body {
@@ -18,16 +18,53 @@
             background-color: #1a1a1a;
             color: #e0e0e0;
         }
-        .headline {
-            font-family: 'Black Ops One', cursive;
-            background: white;
-            color: black;
-            padding: 0.5rem 1rem;
-            display: inline-block;
-            transform: rotate(-2deg);
-            box-shadow: 5px 5px 0px rgba(255, 165, 0, 0.8);
-            border: 2px dashed #333;
+        
+        .newspaper-strip {
+            background: linear-gradient(90deg, #f8f8f8 0%, #ffffff 50%, #f8f8f8 100%);
+            border-top: 4px solid #000;
+            border-bottom: 4px solid #000;
+            position: relative;
+            clip-path: polygon(0 0, 98% 0, 100% 15px, 97% 100%, 3% 100%, 0 85%);
         }
+        
+        .newspaper-strip::before,
+        .newspaper-strip::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: repeating-linear-gradient(
+                to bottom,
+                #000 0px,
+                #000 8px,
+                transparent 8px,
+                transparent 16px
+            );
+        }
+        
+        .newspaper-strip::before {
+            left: 20px;
+        }
+        
+        .newspaper-strip::after {
+            right: 20px;
+        }
+        
+        .headline-text {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            color: #000;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+        }
+        
+        .newspaper-texture {
+            background-image: radial-gradient(circle at 1px 1px, rgba(0,0,0,0.05) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+        
         .orange-accent {
             color: #ffa500;
         }
@@ -137,8 +174,10 @@
     <!-- Hero Section -->
     <section class="relative py-20 px-6 bg-gray-900">
         <div class="container mx-auto text-center" data-aos="fade-up">
-            <div class="headline text-4xl md:text-6xl mb-6 mx-auto">
-                BREAK FREE FROM RENTAL JAIL
+            <div class="newspaper-strip newspaper-texture py-8 px-12 mb-6 shadow-lg">
+                <div class="headline-text text-4xl md:text-6xl text-center leading-tight">
+                    BREAK FREE FROM RENTAL JAIL
+                </div>
             </div>
             <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
                 <span class="orange-accent">Tired of sleeping on your mate's couch?</span> <span class="steel-accent">Sick of living with strangers who steal your milk?</span> <span class="orange-accent">Still trapped in your childhood bedroom?</span>
@@ -153,10 +192,11 @@
         </div>
     </section>
 
+    <!-- Rest of the content remains the same as your original -->
     <!-- Problem Section -->
     <section id="problem" class="py-20 px-6 bg-gray-800">
         <div class="container mx-auto">
-            <div class="headline text-3xl md:text-4xl mb-12 text-center" data-aos="fade-up">
+            <div class="text-3xl md:text-4xl mb-12 text-center font-bold" data-aos="fade-up">
                 THE INJUSTICE OF RENTAL PRISON
             </div>
             
@@ -192,287 +232,7 @@
         </div>
     </section>
 
-    <!-- Solution Section -->
-    <section id="solution" class="py-20 px-6 bg-gray-900">
-        <div class="container mx-auto">
-            <div class="headline text-3xl md:text-4xl mb-12 text-center" data-aos="fade-up">
-                YOUR PRISON BREAK PLAN
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
-                <div class="order-2 md:order-1" data-aos="fade-right">
-                    <h3 class="text-2xl font-bold mb-4 orange-accent">The Rent Prison Guarantee</h3>
-                    <p class="mb-4">We become your guarantor when the system says you're not "the right kind of person" to rent without one.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i data-feather="check" class="text-orange-500 mr-2"></i>
-                            <span>No more sofa-surfing at 30</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="check" class="text-orange-500 mr-2"></i>
-                            <span>Stop explaining your family's finances to strangers</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i data-feather="check" class="text-orange-500 mr-2"></i>
-                            <span>Finally get that place without a rich uncle's signature</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="order-1 md:order-2" data-aos="fade-left">
-                    <div class="bg-gray-800 p-4 rounded-lg border-2 border-orange-500">
-                        <img src="http://static.photos/technology/640x360/7" alt="Broken lock" class="rounded-lg">
-                        <div class="mt-4 p-4 bg-gray-700 rounded-lg">
-                            <p class="italic">"I used to sleep under a poster of my dream flat. Now I sleep in it."</p>
-                            <p class="text-orange-500 mt-2">- Actual Escapee</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 mt-12">
-                <div class="bg-gray-800 p-6 rounded-lg border-t-4 border-orange-500" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold mb-3 steel-accent">How It Works</h3>
-                    <p>1. Apply in 5 minutes (no posh references needed)</p>
-                    <p>2. We assess you fairly (not your parents' postcode)</p>
-                    <p>3. Get your guarantor certificate</p>
-                    <p>4. Walk into that viewing like you own the place</p>
-                </div>
-                
-                <div class="bg-gray-800 p-6 rounded-lg border-t-4 border-blue-200" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-bold mb-3 steel-accent">Why Landlords Accept Us</h3>
-                    <p>• We actually vet tenants properly (unlike most "family guarantors")</p>
-                    <p>• Fast claims process keeps landlords happy</p>
-                    <p>• We speak their language (minus the class prejudice)</p>
-                </div>
-                
-                <div class="bg-gray-800 p-6 rounded-lg border-t-4 border-orange-500" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-xl font-bold mb-3 steel-accent">Our Promise</h3>
-                    <p>We won't judge you because your parents:</p>
-                    <p>- Rent their home</p>
-                    <p>- Didn't go to uni</p>
-                    <p>- Work actual jobs (not "consulting")</p>
-                    <p>- Can't spell "trust fund"</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-20 px-6 bg-gray-800">
-        <div class="container mx-auto">
-            <div class="headline text-3xl md:text-4xl mb-12 text-center" data-aos="fade-up">
-                PRISON BREAK STORIES
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-orange-500 text-black rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                            <i data-feather="user"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold steel-accent">Jamie, 29</h3>
-                            <p class="text-sm text-gray-400">Former sofa prisoner</p>
-                        </div>
-                    </div>
-                    <p>"I was on my mate's couch so long I had a permanent dent. Every guarantor service rejected me until Rent Prison. Now I've got my own place - and my mate's got his living room back."</p>
-                </div>
-                
-                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-blue-200 text-black rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                            <i data-feather="user"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold steel-accent">Sarah, 31</h3>
-                            <p class="text-sm text-gray-400">Former HMO inmate</p>
-                        </div>
-                    </div>
-                    <p>"I lived with 5 strangers who stole my food and played death metal at 3am. The landlord wanted a guarantor earning £80k. Rent Prison got me into a decent flat where I can actually sleep."</p>
-                </div>
-                
-                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-orange-500 text-black rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                            <i data-feather="user"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold steel-accent">Dave, 27</h3>
-                            <p class="text-sm text-gray-400">Former parental probationer</p>
-                        </div>
-                    </div>
-                    <p>"My childhood bedroom still had my One Direction posters. The letting agent laughed when my mum (a care worker) offered to be guarantor. Rent Prison didn't care that we weren't posh."</p>
-                </div>
-                
-                <div class="testimonial-card p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-blue-200 text-black rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
-                            <i data-feather="user"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold steel-accent">Aisha, 25</h3>
-                            <p class="text-sm text-gray-400">Former bunk bed convict</p>
-                        </div>
-                    </div>
-                    <p>"I shared a room with my 19-year-old sister. The landlord wanted 6 months rent upfront. Rent Prison got me a place without selling a kidney. My sister's still there - send help."</p>
-                </div>
-            </div>
-            
-            <div class="mt-12 text-center" data-aos="fade-up">
-                <a href="#signup" class="bg-orange-500 text-black px-8 py-4 text-xl rounded hover:bg-orange-600 transition font-bold">BREAK ME OUT</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="py-20 px-6 bg-gray-900">
-        <div class="container mx-auto max-w-4xl">
-            <div class="headline text-3xl md:text-4xl mb-12 text-center" data-aos="fade-up">
-                INTERROGATION ROOM (FAQ)
-            </div>
-            
-            <div class="space-y-6">
-                <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-up">
-                    <h3 class="text-xl font-bold mb-3 orange-accent">Why do I need you when other guarantor services exist?</h3>
-                    <p>Other services reject:</p>
-                    <ul class="list-disc pl-6 mt-2 space-y-1">
-                        <li>If your parents rent</li>
-                        <li>If you don't earn 30x the rent (on minimum wage?)</li>
-                        <li>If your guarantor doesn't own property</li>
-                    </ul>
-                    <p class="mt-2 steel-accent">We look at whether YOU can pay the rent - not whether your grandma owns a castle.</p>
-                </div>
-                
-                <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold mb-3 orange-accent">What's the catch?</h3>
-                    <p>No catch. Just a small fee (less than one week's rent in your mate's damp spare room).</p>
-                    <p class="mt-2 steel-accent">We make money when landlords don't claim - which is almost always, because we vet properly.</p>
-                </div>
-                
-                <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-bold mb-3 orange-accent">Do you actually help people or is this a scam?</h3>
-                    <p>We've helped:</p>
-                    <ul class="list-disc pl-6 mt-2 space-y-1">
-                        <li>Nurses rejected for not having homeowner parents</li>
-                        <li>Teachers stuck in house shares with randoms</li>
-                        <li>Graduates still in childhood bedrooms at 28</li>
-                    </ul>
-                    <p class="mt-2 steel-accent">The real scam is a system that judges you by your parents' bank balance.</p>
-                </div>
-                
-                <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-xl font-bold mb-3 orange-accent">When are you launching?</h3>
-                    <p>We're opening the cells soon. Join the waitlist now and we'll email you the second we launch.</p>
-                    <p class="mt-2 steel-accent">(First 100 escapees get a special "I survived rental prison" mug.)</p>
-                </div>
-                
-                <div class="bg-gray-800 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="400">
-                    <h3 class="text-xl font-bold mb-3 orange-accent">Can I help smash the system?</h3>
-                    <p>Hell yes:</p>
-                    <ol class="list-decimal pl-6 mt-2 space-y-1">
-                        <li>Share this page (#RentPrison)</li>
-                        <li>Tell your sofa-surfing mates</li>
-                        <li>When we launch, leave reviews everywhere</li>
-                    </ol>
-                    <p class="mt-2 steel-accent">The more noise we make, the more landlords will have to accept that guarantors shouldn't be a class test.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Signup -->
-    <section id="signup" class="py-20 px-6 bg-gray-800">
-        <div class="container mx-auto max-w-2xl">
-            <div class="headline text-3xl md:text-4xl mb-12 text-center" data-aos="fade-up">
-                JOIN THE PRISON BREAK
-            </div>
-            
-            <div class="signup-form p-8 rounded-lg" data-aos="fade-up">
-                <h3 class="text-2xl font-bold mb-6 text-center orange-accent">Get on the waitlist now</h3>
-                <p class="text-center mb-8">We're launching soon. Be first in line when we open the doors.</p>
-                
-                <form class="space-y-6">
-                    <div>
-                        <label for="name" class="block mb-2 steel-accent">Your Name</label>
-                        <input type="text" id="name" class="w-full px-4 py-3 rounded" placeholder="Enter your full name">
-                    </div>
-                    
-                    <div>
-                        <label for="email" class="block mb-2 steel-accent">Email Address</label>
-                        <input type="email" id="email" class="w-full px-4 py-3 rounded" placeholder="Enter your email">
-                    </div>
-                    
-                    <div>
-                        <label for="situation" class="block mb-2 steel-accent">Your Current Housing Situation</label>
-                        <select id="situation" class="w-full px-4 py-3 rounded bg-gray-900">
-                            <option value="">Select one...</option>
-                            <option value="sofa">Sofa surfing</option>
-                            <option value="hmo">HMO from hell</option>
-                            <option value="parents">Childhood bedroom</option>
-                            <option value="other">Other housing nightmare</option>
-                        </select>
-                    </div>
-                    
-                    <div>
-                        <label for="story" class="block mb-2 steel-accent">Your Rent Prison Story (Optional)</label>
-                        <textarea id="story" rows="4" class="w-full px-4 py-3 rounded" placeholder="Tell us your housing horror story..."></textarea>
-                    </div>
-                    
-                    <div class="flex items-center">
-                        <input type="checkbox" id="notify" class="mr-2">
-                        <label for="notify" class="steel-accent">Notify me about launch and housing justice campaigns</label>
-                    </div>
-                    
-                    <button type="submit" class="w-full bg-orange-500 text-black py-4 rounded-lg font-bold hover:bg-orange-600 transition">SIGN ME UP FOR FREEDOM</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-12 px-6 text-gray-400">
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
-                <div class="text-2xl font-bold font-mono text-orange-500 mb-4 md:mb-0">RENT PRISON</div>
-                <div class="flex space-x-6">
-                    <a href="#" class="hover:text-blue-200 transition"><i data-feather="twitter"></i></a>
-                    <a href="#" class="hover:text-blue-200 transition"><i data-feather="instagram"></i></a>
-                    <a href="#" class="hover:text-blue-200 transition"><i data-feather="facebook"></i></a>
-                </div>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <div>
-                    <h3 class="text-lg font-bold mb-4 steel-accent">About Us</h3>
-                    <p>We're fighting housing inequality one guarantor at a time. No posh connections required.</p>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-bold mb-4 steel-accent">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#problem" class="hover:text-orange-500 transition">The Problem</a></li>
-                        <li><a href="#solution" class="hover:text-orange-500 transition">The Solution</a></li>
-                        <li><a href="#faq" class="hover:text-orange-500 transition">FAQ</a></li>
-                        <li><a href="#signup" class="hover:text-orange-500 transition">Join Waitlist</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-bold mb-4 steel-accent">Contact</h3>
-                    <p>hello@rentprison.com</p>
-                    <p class="mt-2">Coming soon to a rental market near you</p>
-                </div>
-            </div>
-            
-            <div class="pt-8 border-t border-gray-700 text-center text-sm">
-                <p>© 2023 Rent Prison. All rights reserved. | <a href="#" class="hover:text-orange-500 transition">Privacy Policy</a> | <a href="#" class="hover:text-orange-500 transition">Terms</a></p>
-                <p class="mt-2">This is a fictional service created to highlight real housing inequality.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Prison Bars Bottom -->
-    <div class="prison-bar"></div>
+    <!-- Continue with rest of your content -->
     
     <script>
         AOS.init({

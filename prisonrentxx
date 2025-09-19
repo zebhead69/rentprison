@@ -1,0 +1,943 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISON RENT | The Rent Guarantor Revolution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #111;
+            color: #eee;
+        }
+        .stencil {
+            font-family: 'Stardos Stencil', sans-serif;
+        }
+        .newspaper-strip {
+            background: repeating-linear-gradient(
+                0deg,
+                #fff,
+                #fff 20px,
+                #f0f0f0 20px,
+                #f0f0f0 22px
+            );
+            color: #222;
+            padding: 1rem;
+            border-left: 4px solid #ff5e00;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+        }
+        .electric-blue {
+            color: #f0f0f0;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+        }
+        .orange-accent {
+            color: #ff5e00;
+        }
+        .prison-bars {
+            background-image: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 15px,
+                #ff5e00 15px,
+                #ff5e00 20px
+            );
+            height: 8px;
+        }
+        .testimonial-card {
+            border: 3px solid #ff5e00;
+            background: #222;
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-size: 80px;
+            color: #ff5e00;
+            font-family: serif;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="container mx-auto px-4 py-24 relative z-10">
+            <div class="newspaper-strip max-w-4xl mx-auto mb-8" data-aos="fade-up">
+                <h1 class="stencil text-4xl md:text-6xl mb-4">BREAKING: <span class="orange-accent">RENTAL SYSTEM</span> DECLARED <span class="electric-blue">BROKEN</span></h1>
+                <p class="text-lg">Prison Rent introduces the revolutionary alternative to exploitative guarantor systems</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-900 p-8 border-l-4 border-orange-500" data-aos="fade-right">
+                    <h2 class="stencil text-2xl mb-4 orange-accent">THE PROBLEM</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-feather="alert-circle" class="mr-2 mt-1 text-orange-500"></i>
+                            <span>Rich kids get daddy to sign, poor kids get rejected</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="alert-circle" class="mr-2 mt-1 text-orange-500"></i>
+                            <span>Deposits worth 6 weeks rent? That's a prison sentence</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="alert-circle" class="mr-2 mt-1 text-orange-500"></i>
+                            <span>Credit checks that make no sense for renters</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="alert-circle" class="mr-2 mt-1 text-orange-500"></i>
+                            <span>Landlords stuck with unreliable tenants</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-900 p-8 border-l-4 border-electric-blue" data-aos="fade-left">
+                    <h2 class="stencil text-2xl mb-4 electric-blue">OUR SOLUTION</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="mr-2 mt-1 text-electric-blue"></i>
+                            <span><strong>No cosigner required</strong> - we've got your back</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="mr-2 mt-1 text-electric-blue"></i>
+                            <span><strong>Cashback rewards</strong> for on-time payments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="mr-2 mt-1 text-electric-blue"></i>
+                            <span><strong>Quick acceptance</strong> - no bureaucratic BS</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="mr-2 mt-1 text-electric-blue"></i>
+                            <span><strong>Payment plans available</strong> - we're not monsters</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="zoom-in">
+                <div class="newspaper-strip max-w-xl mx-auto mb-8">
+                    <h3 class="stencil text-2xl orange-accent">COMING SOON TO MANCHESTER</h3>
+                    <p>Limited spots available - join the waitlist now</p>
+                </div>
+                <a href="#apply" class="stencil bg-orange-500 hover:bg-orange-600 text-black px-8 py-4 text-xl uppercase inline-block transition duration-300 mb-4">
+                    JOIN WAITLIST
+                </a>
+                <p class="text-sm electric-blue">First 100 signups get 50% off first year</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="newspaper-strip max-w-4xl mx-auto mb-12" data-aos="fade-up">
+                <h2 class="stencil text-3xl md:text-4xl mb-2">HOW <span class="orange-accent">PRISON RENT</span> <span class="electric-blue">WORKS</span></h2>
+                <p>Three simple steps to rental freedom</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-800 p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl stencil mb-4 electric-blue">1</div>
+                    <h3 class="stencil text-xl mb-3 orange-accent">APPLY ONLINE</h3>
+                    <p>Our revolutionary assessment looks at you as a person, not just a credit score. Takes 5 minutes.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl stencil mb-4 electric-blue">2</div>
+                    <h3 class="stencil text-xl mb-3 orange-accent">GET APPROVED</h3>
+                    <p>No waiting weeks for an answer. Most applicants get approved within 24 hours.</p>
+                </div>
+                
+                <div class="bg-gray-800 p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl stencil mb-4 electric-blue">3</div>
+                    <h3 class="stencil text-xl mb-3 orange-accent">MOVE IN</h3>
+                    <p>We guarantee your rent to the landlord. You get cashback rewards for paying on time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Hero Landlords -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="newspaper-strip max-w-4xl mx-auto mb-12" data-aos="fade-up">
+                <h2 class="stencil text-3xl md:text-4xl mb-2">HERO <span class="orange-accent">LANDLORDS</span> <span class="electric-blue">PROGRAM</span></h2>
+                <p>Good landlords deserve recognition (and free stuff)</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gray-900 p-8" data-aos="fade-up">
+                <p class="mb-6">We're giving away <span class="orange-accent font-bold">5 free annual subscriptions</span> (worth £299 each) to landlords who:</p>
+                
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="mr-2 mt-1 text-electric-blue"></i>
+                        <span>Maintain fair rents and good conditions</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="mr-2 mt-1 text-electric-blue"></i>
+                        <span>Respond promptly to maintenance requests</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="mr-2 mt-1 text-electric-blue"></i>
+                        <span>Treat tenants with respect</span>
+                    </li>
+                </ul>
+                
+                <p class="mb-6">Winners will be featured in our <span class="electric-blue">Hero Landlord Gallery</span> - helping good tenants find good landlords.</p>
+                
+                <a href="#landlord-apply" class="stencil bg-blue-500 hover:bg-blue-600 text-black px-6 py-3 text-lg uppercase inline-block transition duration-300">
+                    NOMINATE A LANDLORD
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Coming Soon Countdown -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <div class="newspaper-strip max-w-2xl mx-auto mb-8">
+                <h2 class="stencil text-3xl orange-accent">TIME'S RUNNING OUT</h2>
+                <p>Limited spots available when we launch</p>
+            </div>
+            
+            <div class="grid grid-cols-4 gap-4 max-w-xl mx-auto">
+                <div class="bg-gray-900 p-4">
+                    <div class="stencil text-4xl electric-blue" id="countdown-days">30</div>
+                    <div class="text-sm">DAYS</div>
+                </div>
+                <div class="bg-gray-900 p-4">
+                    <div class="stencil text-4xl electric-blue" id="countdown-hours">23</div>
+                    <div class="text-sm">HOURS</div>
+                </div>
+                <div class="bg-gray-900 p-4">
+                    <div class="stencil text-4xl electric-blue" id="countdown-minutes">59</div>
+                    <div class="text-sm">MINUTES</div>
+                </div>
+                <div class="bg-gray-900 p-4">
+                    <div class="stencil text-4xl electric-blue" id="countdown-seconds">59</div>
+                    <div class="text-sm">SECONDS</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-gray-900" id="testimonials" style="display: none;">
+        <div class="container mx-auto px-4">
+            <div class="newspaper-strip max-w-4xl mx-auto mb-12" data-aos="fade-up">
+                <h2 class="stencil text-3xl md:text-4xl mb-2">WHAT <span class="orange-accent">PEOPLE</span> <span class="electric-blue">SAY</span></h2>
+                <p>(These are probably real, we didn't make them up... probably)</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="testimonial-card p-6" data-aos="flip-left">
+                    <p class="mb-4 italic">"I was rejected by 5 landlords because my parents are 'financially irresponsible' (they're artists). Prison Rent got me into my dream flat. Now my parents can visit and critique my decor choices."</p>
+                    <p class="font-bold orange-accent">— JAZZ, 23</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="100">
+                    <p class="mb-4 italic">"My guarantor application was approved faster than my last Tinder date unmatched me. That's efficiency."</p>
+                    <p class="font-bold orange-accent">— DARREN, 29</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="200">
+                    <p class="mb-4 italic">"I got £50 cashback for paying my rent on time. Used it to buy a plant that died immediately. 10/10 would rent again."</p>
+                    <p class="font-bold orange-accent">— SOPHIE, 26</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="300">
+                    <p class="mb-4 italic">"As a landlord, I was skeptical. But Prison Rent tenants have been more reliable than ones with 'guarantors' who mysteriously disappear."</p>
+                    <p class="font-bold electric-blue">— MR. PATEL</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="400">
+                    <p class="mb-4 italic">"I didn't need a guarantor! Just my firstborn child and a blood sample. Wait, no, that was another company. Prison Rent was actually reasonable."</p>
+                    <p class="font-bold orange-accent">— TOM, 31</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="500">
+                    <p class="mb-4 italic">"The certificate proving I paid on time helped me get approved for another flat. Take that, system that said I was 'high risk' because I'm self-employed!"</p>
+                    <p class="font-bold orange-accent">— AMIRA, 27</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-black" id="apply">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="stencil text-3xl md:text-5xl mb-6" data-aos="fade-up">
+                    <span class="orange-accent">READY TO BREAK</span> <span class="electric-blue">FREE?</span>
+                </h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Join the rental revolution. Manchester's premier rent guarantor service.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-gray-900 p-8 text-left" data-aos="fade-right">
+                        <h3 class="stencil text-2xl mb-4 orange-accent">FOR TENANTS</h3>
+                        <p class="mb-6">Apply now and get approved in 24 hours. No cosigner required.</p>
+                        <a href="#" class="stencil bg-orange-500 hover:bg-orange-600 text-black px-6 py-3 text-lg uppercase inline-block transition duration-300">
+                            APPLY NOW
+                        </a>
+                    </div>
+                    
+                    <div class="bg-gray-900 p-8 text-left" data-aos="fade-left">
+                        <h3 class="stencil text-2xl mb-4 electric-blue">FOR LANDLORDS</h3>
+                        <p class="mb-6">Register your property and get reliable, vetted tenants.</p>
+                        <a href="#" class="stencil bg-blue-500 hover:bg-blue-600 text-black px-6 py-3 text-lg uppercase inline-block transition duration-300">
+                            LANDLORD SIGN UP
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div>
+                    <h3 class="stencil text-xl mb-4 orange-accent">PRISON RENT</h3>
+                    <p>Manchester's revolutionary rent guarantor service.</p>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 electric-blue">LINKS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="faq.html" class="hover:underline">FAQ</a></li>
+                        <li><a href="testimonials.html" class="hover:underline">Testimonials</a></li>
+                        <li><a href="#landlords" class="hover:underline">For Landlords</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 orange-accent">CONTACT</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2"></i>
+                            <span>breakfree@prisonrent.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2"></i>
+                            <span>0161 123 4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>Manchester, UK</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 electric-blue">SOCIAL</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-orange-500"><i data-feather="twitter"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Prison Rent. All rights reserved. Making rental prison sentences a thing of the past.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+
+        // Countdown timer
+        function updateCountdown() {
+            const launchDate = new Date();
+            launchDate.setDate(launchDate.getDate() + 30); // 30 days from now
+            
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById("countdown-days").innerHTML = days;
+            document.getElementById("countdown-hours").innerHTML = hours;
+            document.getElementById("countdown-minutes").innerHTML = minutes;
+            document.getElementById("countdown-seconds").innerHTML = seconds;
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | PRISON RENT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #111;
+            color: #eee;
+        }
+        .stencil {
+            font-family: 'Stardos Stencil', sans-serif;
+        }
+        .newspaper-strip {
+            background: repeating-linear-gradient(
+                0deg,
+                #fff,
+                #fff 20px,
+                #f0f0f0 20px,
+                #f0f0f0 22px
+            );
+            color: #222;
+            padding: 1rem;
+            border-left: 4px solid #ff5e00;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+        }
+        .electric-blue {
+            color: #00f7ff;
+            text-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+        }
+        .orange-accent {
+            color: #ff5e00;
+        }
+        .prison-bars {
+            background-image: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 15px,
+                #ff5e00 15px,
+                #ff5e00 20px
+            );
+            height: 8px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #333;
+            margin-bottom: 1rem;
+        }
+        .faq-question {
+            background: #222;
+            padding: 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            padding: 1rem;
+            background: #1a1a1a;
+            display: none;
+        }
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- FAQ Header -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="newspaper-strip max-w-4xl mx-auto" data-aos="fade-up">
+                <h1 class="stencil text-4xl md:text-5xl mb-2">FREQUENTLY <span class="orange-accent">ASKED</span> <span class="electric-blue">QUESTIONS</span></h1>
+                <p>(That we're tired of answering but will anyway)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- FAQ Content -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="space-y-4">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question stencil">
+                        <span class="orange-accent">1.</span> HOW IS THIS DIFFERENT FROM A NORMAL GUARANTOR?
+                        <i data-feather="chevron-down" class="text-electric-blue"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Normal guarantors require someone else to put their name on the line for you. We don't. Our system assesses <em>you</em> - not your parents' bank balance. Plus, we actually reward you for paying on time instead of just punishing you when things go wrong.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question stencil">
+                        <span class="orange-accent">2.</span> WHAT'S THE CATCH WITH THE CASHBACK?
+                        <i data-feather="chevron-down" class="text-electric-blue"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No catch. Pay your rent on time every month, we give you money back. It's that simple. We make our money from landlords who value reliable tenants, not from exploiting renters.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question stencil">
+                        <span class="orange-accent">3.</span> WHY SHOULD LANDLORDS TRUST YOUR SYSTEM?
+                        <i data-feather="chevron-down" class="text-electric-blue"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Because our vetting process actually works. Traditional guarantors often disappear when there's a problem. We don't. Plus, landlords in our Hero Program get visibility to quality tenants who prefer renting from decent humans.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question stencil">
+                        <span class="orange-accent">4.</span> WHAT IF I LOSE MY JOB OR CAN'T PAY?
+                        <i data-feather="chevron-down" class="text-electric-blue"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Talk to us. We're not the rental mafia. We'll work with you to find a solution - payment plans, temporary reductions, whatever keeps you housed and the landlord paid. The whole point is to prevent homelessness, not cause it.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question stencil">
+                        <span class="orange-accent">5.</span> WHY MANCHESTER ONLY? WHEN ARE YOU EXPANDING?
+                        <i data-feather="chevron-down" class="text-electric-blue"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're perfecting the model here first. Manchester's rental market is broken enough to need us, but not so broken we can't fix it. Other cities coming soon - tell us where to target next.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="index.html" class="stencil bg-orange-500 hover:bg-orange-600 text-black px-6 py-3 text-lg uppercase inline-block transition duration-300">
+                    BACK TO HOME
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div>
+                    <h3 class="stencil text-xl mb-4 orange-accent">PRISON RENT</h3>
+                    <p>Manchester's revolutionary rent guarantor service.</p>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 electric-blue">LINKS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="faq.html" class="hover:underline">FAQ</a></li>
+                        <li><a href="testimonials.html" class="hover:underline">Testimonials</a></li>
+                        <li><a href="#landlords" class="hover:underline">For Landlords</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 orange-accent">CONTACT</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2"></i>
+                            <span>breakfree@prisonrent.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2"></i>
+                            <span>0161 123 4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>Manchester, UK</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 electric-blue">SOCIAL</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-orange-500"><i data-feather="twitter"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Prison Rent. All rights reserved. Making rental prison sentences a thing of the past.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const icon = question.querySelector('i');
+                if (question.classList.contains('active')) {
+                    icon.setAttribute('data-feather', 'chevron-up');
+                } else {
+                    icon.setAttribute('data-feather', 'chevron-down');
+                }
+                feather.replace();
+            });
+        });
+    </script>
+</body>
+</html>
+Copilot said: I couldn't find a file named "prisonrentx"
+I couldn't find a file named "prisonrentx" in your zebhead69/rentprison repository using a direct code search.
+
+Can you please confirm the exact filename and extension?
+
+For example: prisonrentx.html, prisonrentx.js, etc.
+Or let me know if you want me to create a new file called prisonrentx.html with the code you provided.
+Once you confirm, I’ll update or create the file for you!
+
+You said: can yoiu create a new file tyen
+can yoiu create a new file tyen please and include this coenwith the codei jusyt sent yiu <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | PRISON RENT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: #111;
+            color: #eee;
+        }
+        .stencil {
+            font-family: 'Stardos Stencil', sans-serif;
+        }
+        .newspaper-strip {
+            background: repeating-linear-gradient(
+                0deg,
+                #fff,
+                #fff 20px,
+                #f0f0f0 20px,
+                #f0f0f0 22px
+            );
+            color: #222;
+            padding: 1rem;
+            border-left: 4px solid #ff5e00;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+        }
+        .electric-blue {
+            color: #00f7ff;
+            text-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+        }
+        .orange-accent {
+            color: #ff5e00;
+        }
+        .prison-bars {
+            background-image: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 15px,
+                #ff5e00 15px,
+                #ff5e00 20px
+            );
+            height: 8px;
+        }
+        .testimonial-card {
+            border: 3px solid #ff5e00;
+            background: #222;
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 10px;
+            font-size: 80px;
+            color: #ff5e00;
+            font-family: serif;
+            line-height: 1;
+        }
+        .landlord-card {
+            border: 3px solid #00f7ff;
+            background: #222;
+        }
+        .landlord-card img {
+            filter: grayscale(100%) contrast(120%);
+            transition: filter 0.3s;
+        }
+        .landlord-card:hover img {
+            filter: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Testimonials Header -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="newspaper-strip max-w-4xl mx-auto" data-aos="fade-up">
+                <h1 class="stencil text-4xl md:text-5xl mb-2"><span class="orange-accent">HAPPY</span> <span class="electric-blue">PRISONERS</span></h1>
+                <p>(These testimonials may contain traces of sarcasm and truth)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Tenant Testimonials -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="stencil text-3xl mb-8 text-center orange-accent" data-aos="fade-up">TENANT TESTIMONIALS</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="testimonial-card p-6" data-aos="flip-left">
+                    <p class="mb-4 italic">"I was rejected by 5 landlords because my parents are 'financially irresponsible' (they're artists). Prison Rent got me into my dream flat. Now my parents can visit and critique my decor choices."</p>
+                    <p class="font-bold orange-accent">— JAZZ, 23</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="100">
+                    <p class="mb-4 italic">"My guarantor application was approved faster than my last Tinder date unmatched me. That's efficiency."</p>
+                    <p class="font-bold orange-accent">— DARREN, 29</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="200">
+                    <p class="mb-4 italic">"I got £50 cashback for paying my rent on time. Used it to buy a plant that died immediately. 10/10 would rent again."</p>
+                    <p class="font-bold orange-accent">— SOPHIE, 26</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="300">
+                    <p class="mb-4 italic">"The certificate proving I paid on time helped me get approved for another flat. Take that, system that said I was 'high risk' because I'm self-employed!"</p>
+                    <p class="font-bold orange-accent">— AMIRA, 27</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="400">
+                    <p class="mb-4 italic">"I didn't need a guarantor! Just my firstborn child and a blood sample. Wait, no, that was another company. Prison Rent was actually reasonable."</p>
+                    <p class="font-bold orange-accent">— TOM, 31</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="flip-left" data-aos-delay="500">
+                    <p class="mb-4 italic">"Finally a company that understands not everyone has parents with perfect credit scores. Mine declared bankruptcy after a failed alpaca farming venture. Long story."</p>
+                    <p class="font-bold orange-accent">— LIAM, 25</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Landlord Testimonials -->
+    <section class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="stencil text-3xl mb-8 text-center electric-blue" data-aos="fade-up">HERO LANDLORDS</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="landlord-card p-6" data-aos="zoom-in">
+                    <div class="mb-4 overflow-hidden">
+                        <img src="http://static.photos/people/640x360/1" alt="Landlord" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="stencil text-xl mb-2 electric-blue">MR. PATEL</h3>
+                    <p class="mb-4 italic">"Prison Rent tenants have been more reliable than ones with 'guarantors' who mysteriously disappear when there's an issue."</p>
+                    <div class="flex items-center">
+                        <i data-feather="award" class="mr-2 text-orange-500"></i>
+                        <span class="text-sm">Hero Landlord 2023</span>
+                    </div>
+                </div>
+                
+                <div class="landlord-card p-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="mb-4 overflow-hidden">
+                        <img src="http://static.photos/people/640x360/2" alt="Landlord" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="stencil text-xl mb-2 electric-blue">MRS. CHEN</h3>
+                    <p class="mb-4 italic">"The cashback incentive means tenants prioritize rent payments. Fewer chasing, more tea drinking."</p>
+                    <div class="flex items-center">
+                        <i data-feather="award" class="mr-2 text-orange-500"></i>
+                        <span class="text-sm">Hero Landlord 2023</span>
+                    </div>
+                </div>
+                
+                <div class="landlord-card p-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="mb-4 overflow-hidden">
+                        <img src="http://static.photos/people/640x360/3" alt="Landlord" class="w-full h-48 object-cover">
+                    </div>
+                    <h3 class="stencil text-xl mb-2 electric-blue">THE JOHNSONS</h3>
+                    <p class="mb-4 italic">"We got featured in the Hero Gallery and now have a waiting list of quality tenants. Worth every penny (which was zero, since we won the free subscription)."</p>
+                    <div class="flex items-center">
+                        <i data-feather="award" class="mr-2 text-orange-500"></i>
+                        <span class="text-sm">Hero Landlord 2023</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="index.html#landlord-apply" class="stencil bg-blue-500 hover:bg-blue-600 text-black px-6 py-3 text-lg uppercase inline-block transition duration-300">
+                    NOMINATE A LANDLORD
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- More Testimonials -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="stencil text-3xl mb-8 text-center orange-accent" data-aos="fade-up">MORE PRAISE (WE'RE BLUSHING)</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="testimonial-card p-6" data-aos="fade-right">
+                    <p class="mb-4 italic">"The onboarding process was so smooth I thought it was a scam at first. Then I remembered most rental companies are the actual scams."</p>
+                    <p class="font-bold orange-accent">— EMMA, 28</p>
+                </div>
+                
+                <div class="testimonial-card p-6" data-aos="fade-left">
+                    <p class="mb-4 italic">"As an international student, finding a guarantor was impossible. Prison Rent treated me like a human being instead of a risk assessment spreadsheet."</p>
+                    <p class="font-bold orange-accent">— YUSUF, 24</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="index.html#apply" class="stencil bg-orange-500 hover:bg-orange-600 text-black px-6 py-3 text-lg uppercase inline-block transition duration-300">
+                    JOIN THE REVOLUTION
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prison bars divider -->
+    <div class="prison-bars w-full"></div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div>
+                    <h3 class="stencil text-xl mb-4 orange-accent">PRISON RENT</h3>
+                    <p>Manchester's revolutionary rent guarantor service.</p>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 electric-blue">LINKS</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="faq.html" class="hover:underline">FAQ</a></li>
+                        <li><a href="testimonials.html" class="hover:underline">Testimonials</a></li>
+                        <li><a href="#landlords" class="hover:underline">For Landlords</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 orange-accent">CONTACT</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="mr-2"></i>
+                            <span>breakfree@prisonrent.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="mr-2"></i>
+                            <span>0161 123 4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="mr-2"></i>
+                            <span>Manchester, UK</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="stencil text-xl mb-4 electric-blue">SOCIAL</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-orange-500"><i data-feather="twitter"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="instagram"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="facebook"></i></a>
+                        <a href="#" class="hover:text-orange-500"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p>&copy; 2023 Prison Rent. All rights reserved. Making rental prison sentences a thing of the past.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
